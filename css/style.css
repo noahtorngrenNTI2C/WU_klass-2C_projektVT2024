@@ -6,15 +6,48 @@
 #index_grid{
     display: grid;
     width: 100%;
-    height: 10000px;
+    height: 1000px;
     grid-template-columns: 6fr 1fr;
-    grid-template-rows: 1fr 100px;
+    grid-template-rows: 1fr;
     grid-template-areas:
     "depth scrol"
-    "foote foote";
+    ;
+}
+
+#rubrik{
+    margin: 0.5rem;
+}
+
+#top{
+    
+    width: 100%;
+    height: 3.5rem;
+    
+}
+
+#meny{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 75%;
+    list-style: none;
 }
 
 section{
     grid-area: depth;
     background: blue;
+}
+
+header{
+    background: red;
+}
+
+#bottom{
+    background: green;
+    height: 100px;
+}
+
+.top_item{
+    margin: 0.5rem;
+    
 }
