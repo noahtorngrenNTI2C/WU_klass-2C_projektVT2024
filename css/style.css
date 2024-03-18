@@ -6,11 +6,11 @@
 #index_grid{
     display: grid;
     width: 100%;
-    height: 1000px;
-    grid-template-columns: 6fr 1fr;
+    height: 800px;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "depth scrol"
+    "main"
     ;
 }
 
@@ -33,9 +33,23 @@
     list-style: none;
 }
 
-section{
-    grid-area: depth;
-    background: blue;
+#background_image{
+    grid-area: main;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+
+    
+    background-image: url(../img/bakgrund.jpg);
+}
+
+#background_text{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+    font-size: 4rem;
 }
 
 header{
