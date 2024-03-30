@@ -123,6 +123,112 @@ header{
     font-style: normal;
 }
 
+#grid_produkter{
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "prkt1 prkt2 prkt3"
+    "prkt4 prkt5 prkt6";
+    justify-content: space-around;
+}
+
+.produkt{
+    margin: 5%;
+    position: relative;
+}
+
+.produkt_img{
+    object-fit: cover;
+    width: 350px;
+    height: 250px;
+    border-radius: 50px;
+    display: block;
+}
+
+#produkt1{
+    grid-area: prkt1;
+}
+
+#produkt2{
+    grid-area: prkt2;
+}
+
+#produkt3{
+    grid-area: prkt3;
+}
+
+#produkt4{
+    grid-area: prkt4;
+}
+
+#produkt5{
+    grid-area: prkt5;
+}
+
+.overlay{
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.443);
+    width: 350px;
+    height: 80px;
+    top: 170px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    
+}
+
+.produkt:hover .overlay {
+    opacity: 1;
+}
+
+.overlay_text_rubrik {
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.description{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    display: inline;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#description1{
+    width: 180px;
+}
+
+#description3{
+    width: 197px;
+}
+
+#description6{
+    width: 182px;
+}
+
+.price{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    display: inline;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width:1000px) {
     .model_article{
         display: flex;
@@ -157,5 +263,18 @@ header{
         display: flex;
         margin: 10%;
         border-radius: 50px;
+    }
+
+    #grid_produkter{
+        display: grid;
+        width: 100%;
+        height: fit-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "prkt1 prkt2"
+        "prkt3 prkt4"
+        "prkt5 prkt6";
+        justify-content: space-around;
     }
 }
