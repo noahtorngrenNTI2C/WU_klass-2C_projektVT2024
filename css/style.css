@@ -123,6 +123,39 @@ header{
     font-style: normal;
 }
 
-@media screen and (max-width:800px) {
-    
+@media screen and (max-width:1000px) {
+    .model_article{
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        border-radius: 50px;
+
+        
+    }
+
+    .flygplans_bild{
+        object-fit: cover;
+        width: 550px;
+    }
+
+    .model_h2{
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .flygplans_bild{
+        object-fit: cover;
+        width: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .model_article{
+        display: flex;
+        margin: 10%;
+        border-radius: 50px;
+    }
 }
