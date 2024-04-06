@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Merriweather&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;500&display=swap');
 
 *{
@@ -19,12 +18,13 @@
 
 #rubrik{
     margin: 0.5rem;
+    font-family: "Poppins", sans-serif;
 }
 
 #top{
-    
+    background: #D3D3D3;
     width: 100%;
-    height: 3.5rem;
+    height: 56px;
     
 }
 
@@ -61,8 +61,12 @@ header{
 }
 
 #bottom{
-    background: green;
-    height: 100px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #3B3B3B;
 }
 
 .top_item{
@@ -242,7 +246,12 @@ header{
 }
 
 
+#placement_section_index{
+    position: absolute;
+    left: 15%;
+    top: 30%;
 
+}
 
 #om_oss_rubrik{
     position: relative;
@@ -344,6 +353,14 @@ header{
 
 .index_text{
     font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.index_text:hover{
+    text-decoration: underline;
 }
 
 #om_oss_article{
@@ -352,7 +369,7 @@ header{
     flex-direction: column;
     
     
-    background: blue;
+
     margin: 10px;
     
     left: 50%;
@@ -371,9 +388,169 @@ header{
     -webkit-transform: translate(-50%, 0%);
 }
 
+#background_image_text{
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
 
+.header_a{
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+.bottom_text{
+    font-family: "Poppins", sans-serif;
+    color: #D3D3D3;
+}
 
 @media screen and (max-width:1000px) {
+    #top{
+        background: #D3D3D3;
+        width: 100%;
+        height: 56px;
+        
+    }
+
+    #meny{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        width: 75%;
+        list-style: none;
+    }
+
+    .top_item{
+        margin: 0.1rem;
+        
+    }
+
+    .header_a{
+        font-family: "Poppins", sans-serif;
+        color: black;
+        font-size: 1rem;
+    }
+    
+    #rubrik{
+        opacity: 0;
+        position: absolute;
+        margin: 0.1rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+
+    #bottom{
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background: #3B3B3B;
+    }
+    
+    .bottom_text{
+        font-family: "Poppins", sans-serif;
+        color: #D3D3D3;
+        font-size: 0.5rem;
+    }
+
+    #placement_section_index{
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    
+    }
+
+    #history_airplanes{
+        height: 100px;
+        width: auto;
+        margin: 5px;
+        position: absolute;
+    }
+
+    #hund_produkt{
+        height: 100px;
+        width: auto;
+        margin: 5px;
+        position: absolute;
+    }
+
+    #genomskinlig_jetflygplan{
+        position: absolute;
+        left: 100px;
+        height: 140px;
+        width: auto;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    .flygplans_bild{
+        object-fit: cover;
+        height: 250px;
+        width: 340px;
+        border-radius: 50px;
+    }
+
+    #first_plane{
+        height: 250px;
+        width: 340px;
+        border-radius: 50px;
+    }
+    
+    #second_plane{
+        height: 250px;
+        width: 340px;
+        border-radius: 50px;
+    }
+    
+    #third_plane{
+        height: 250px;
+        width: 340px;
+        border-radius: 50px;
+    }
+    
+    #fourth_plane{
+        height: 250px;
+        width: 340px;
+        border-radius: 50px;
+    }
+
+    .flygplans_text{
+        padding-top: 5px;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    #placement_section_index{
+        position: absolute;
+        left: 15%;
+        top: 10%;
+    
+    }
+
+    #om_oss_bakgrund{
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-image: url(../img/Ny_om_oss_bakgrund.jpg);
+        
+        background-attachment: fixed;
+        
+        
+    }
+
+    .om_oss_text{
+        font-family: "Poppins", sans-serif;
+        font-size: 0.7rem;
+    }
+    
+    #placement_section{
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+
     .model_article{
         display: flex;
         flex-direction: column;
@@ -413,12 +590,15 @@ header{
         display: grid;
         width: 100%;
         height: fit-content;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "prkt1 prkt2"
-        "prkt3 prkt4"
-        "prkt5 prkt6";
+        "prkt1"
+        "prkt2"
+        "prkt3"
+        "prkt4"
+        "prkt5"
+        "prkt6";
         justify-content: space-around;
     }
 }

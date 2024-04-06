@@ -8,7 +8,7 @@
 </head>
 <body>
     <header id="top">
-        
+            
         <ul id="meny">
             <li>
                 <h1 id="rubrik">Flygplan.nu</h1>
@@ -16,49 +16,61 @@
 
             <li class="top_item">
                 <h2>
-                    <a href="index.html">Hem</a>
+                    <a href="index.html" class="header_a">Hem</a>
                 </h2>
             </li>
 
             <li class="top_item">
                 <h2>
-                    <a href="modeller.html">Flygplan</a>
+                    <a href="produkter.html" class="header_a">Produkter</a>
                 </h2>
             </li>
 
             <li class="top_item">
                 <h2>
-                    <a href="om_oss.html">Om oss</a>
+                    <a href="modeller.html" class="header_a">Historia</a>
                 </h2>
             </li>
+
+            <li class="top_item">
+                <h2>
+                    <a href="om_oss.html" class="header_a">Om oss</a>
+                </h2>
+            </li>
+
         </ul>
 
         
     </header>
     
     <main id="index_grid">
-        <section id="background_image">
-            <h1 id="background_text">Flygplan.nu</h1>
-            <h2>En sida om flygplan</h2>
-        </section>
+        <div id="background_image">
+            <!-- <h1 id="background_text">Flygplan.nu</h1> -->
+            <section id="placement_section_index">
+                <h2 id="background_image_text">En sida om flygplan</h2>
+            </section>
+        </div>
 
         <div id="index_grid_two">
             <article id="historia_article">
-                <h2 class="index_text">Historia</h2>
-                <p>Läs om flygplanes historia på flygplan.nu</p>
+                <a href="modeller.html" class="index_text">Historia</a>
+                
+                <p class="oss_article_text">Läs om flygplanes historia på flygplan.nu</p>
                 <img src="img/history_airplanes_2.jpg" alt="bild på historiska flygplan" id="history_airplanes">
             </article>
 
             <article id="produkter_article">
-                <h2 class="index_text">Produkter</h2>
-                <p>Se våra produkter</p>
+                <a href="produkter.html" class="index_text">Produkter</a>
+                
+                <p class="oss_article_text">Se våra produkter</p>
                 <img src="img/packet_med_hund.png" alt="produkt bild" id="hund_produkt">
             </article>
         </div>
 
         <article id="om_oss_article">
             <div id="position_div_om_oss_article">
-                <h2 class="oss_article_text">Om oss</h2>
+                <a href="om_oss.html" class="index_text">Om oss</a>
+                
                 <p class="oss_article_text">Få reda på vilka vi är</p>
                 
             </div>
@@ -66,7 +78,10 @@
     </main>
     
     <footer id="bottom">
-        FOOTER
+        <h2 class="bottom_text">Kontaktuppgifter</h2>
+        <h3 class="bottom_text">Adress: Flygplansvägen 1</h3>
+        <h3 class="bottom_text">Tel: 012345678</h3>
+        <h3 class="bottom_text">e-post: flygplan@luften.nu</h3>
 
     </footer>
 </body>
