@@ -305,9 +305,73 @@ header{
 }
 
 #historia_article{
-    width: 100%;
-    height: 100px;
+    margin: 10px;
+    
+    grid-area: historia;
+
+
 }
+
+#produkter_article{
+    grid-area: produkter;
+
+    margin: 10px;
+}
+
+#hund_produkt{
+    height: 150px;
+    width: auto;
+    margin: 10px;
+    position: absolute;
+}
+
+#history_airplanes{
+    height: 150px;
+    width: auto;
+    margin: 10px;
+    position: absolute;
+}
+
+#index_grid_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "produkter historia";
+    height: 230px;
+    justify-items: center;
+    align-content: space-evenly;
+}
+
+.index_text{
+    font-family: "Poppins", sans-serif;
+}
+
+#om_oss_article{
+    display: flex;
+    height: 70px;
+    flex-direction: column;
+    
+    
+    background: blue;
+    margin: 10px;
+    
+    left: 50%;
+    
+}
+
+.oss_article_text{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+#position_div_om_oss_article{
+    position: absolute;
+   left: 50%;
+    
+    -webkit-transform: translate(-50%, 0%);
+}
+
+
 
 @media screen and (max-width:1000px) {
     .model_article{
