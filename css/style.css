@@ -252,7 +252,7 @@ header{
 
 #om_oss_bakgrund{
     height: 500px;
-    width: 1fr;
+    width: 100%;
     background-size: cover;
     background-image: url(../img/Ny_om_oss_bakgrund.jpg);
     
@@ -450,7 +450,7 @@ header{
     #burger {
         margin-left: 90%;
         cursor: pointer;
-        size: 30px;
+        resize: 30px;
     }
     
     .links_visible {
