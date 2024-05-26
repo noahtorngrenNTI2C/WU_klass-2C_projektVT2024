@@ -10,6 +10,8 @@
     --burgerline_margin: 5px;
 }
 
+
+
 #index_grid{
     display: grid;
     width: 100%;
@@ -450,7 +452,7 @@ header{
     #burger {
         margin-left: 90%;
         cursor: pointer;
-        resize: 30px;
+        
     }
     
     .links_visible {
@@ -470,7 +472,7 @@ header{
         list-style: none;
         transition: all 0.5s;
         z-index: 10;
-        margin-left: 73%;
+        margin-left: 60%;
     }
 
     #top{
@@ -507,7 +509,7 @@ header{
         margin: 0.1rem;
         font-family: "Poppins", sans-serif;
         font-size: 2rem;
-        margin-left: 40%;
+        margin-left: 20%;
     }
 
     #bottom{
@@ -527,9 +529,10 @@ header{
 
     #placement_section_index{
         position: absolute;
-        left: 15%;
+        left: 10%;
         top: 15%;
     
+        margin-left: -40px;
     }
 
     #history_airplanes{
