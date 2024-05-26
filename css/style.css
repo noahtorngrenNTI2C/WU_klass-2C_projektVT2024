@@ -3,6 +3,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+    --burgerline_width: 30px;
+    --burgerline_height: 6px;
+    --burgerline_margin: 5px;
 }
 
 #index_grid{
@@ -19,6 +24,7 @@
 #rubrik{
     margin: 0.5rem;
     font-family: "Poppins", sans-serif;
+    background: #D3D3D3;
 }
 
 #top{
@@ -28,12 +34,23 @@
     
 }
 
-#meny{
+#link_list{
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 75%;
+    width: 70%;
     list-style: none;
+    
+    margin-left: 20%;
+    margin-top: -55px;
+
+    z-index: 10;
+    position: absolute;
+}
+
+.links_visible {
+    /*transform: translateY(450px);*/
+    z-index: 20;
 }
 
 #background_image{
@@ -396,6 +413,11 @@ header{
 .header_a{
     font-family: "Poppins", sans-serif;
     color: black;
+    text-decoration: none;
+}
+
+.header_a:hover{
+    text-decoration: underline;
 }
 
 .bottom_text{
@@ -404,20 +426,69 @@ header{
 }
 
 @media screen and (max-width:1000px) {
+    .burger_line {
+        width: var(--burgerline_width);
+        height: var(--burgerline_height);
+        margin: var(--burgerline_margin);
+        background: black;
+        border-radius: 20%;
+        transition: all 0.5s;
+    }
+    
+    .burger_in_x_form #burger_line_2 {
+        opacity: 0;
+    }
+    
+    .burger_in_x_form #burger_line_1 {
+        transform: translateY(calc(var(--burgerline_height) + var(--burgerline_margin))) rotate(45deg);
+    }
+    
+    .burger_in_x_form #burger_line_3 {
+        transform: translateY(calc((-1)*(var(--burgerline_height) + var(--burgerline_margin)))) rotate(-45deg);
+    }
+    
+    #burger {
+        margin-left: 90%;
+        cursor: pointer;
+        size: 30px;
+    }
+    
+    .links_visible {
+        transform: translateY(500px);
+    }
+    
+    #link_list {
+        background: var(--background_color);
+        display: flex;
+        flex-direction: column;
+        height: 175px;
+        width: 200px;
+        position: absolute;
+        top: -390px;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        transition: all 0.5s;
+        z-index: 10;
+        margin-left: 73%;
+    }
+
     #top{
         background: #D3D3D3;
         width: 100%;
         height: 56px;
-        
+        display: flex;
+        flex-direction: row;
+
     }
 
-    #meny{
+/*    #meny{
         display: flex;
         justify-content: space-between;
         align-content: center;
         width: 75%;
         list-style: none;
-    }
+    }*/
 
     .top_item{
         margin: 0.1rem;
@@ -431,11 +502,12 @@ header{
     }
     
     #rubrik{
-        opacity: 0;
+        opacity: 1;
         position: absolute;
         margin: 0.1rem;
         font-family: "Poppins", sans-serif;
-        font-size: 1rem;
+        font-size: 2rem;
+        margin-left: 40%;
     }
 
     #bottom{
